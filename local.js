@@ -28,6 +28,7 @@ function getDataPath(base, req) {
   Object.keys(req.params).forEach(param => {
     dataPath = dataPath.replace(`/_${param}`, `/${req.params[param]}`);
   });
+  console.log(dataPath);
   return dataPath;
 }
 
