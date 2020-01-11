@@ -14,9 +14,32 @@ app.use(require('express-ejs-layouts'));
 function hasParam(base) {
   return base.endsWith('/_id')
 }
-async function init(app, base, onReady, layout) {
-  const is_root = !!onReady;
 
+function getURLPattern(base) {
+  if (hasParam(base)) {
+    return `/${base.replace('/_id', '/:id')}`;
+  } else {
+    return `/${base}`;
+  }
+}
+
+function getDataPath(base, req) {
+  let dataPath = base;
+  Object.keys(req.params).forEach(param => {
+    dataPath = dataPath.replace(`/_${param}`, `/${req.params[param]}`);
+  });
+  return dataPath;
+}
+
+async function loadJSONdata(file, extraData) {
+  let data = {};
+  try {
+    data = JSON.parse(await readFile(path.join('data', file, 'index.json'), 'utf-8'));
+  } catch (e) {}
+  return Object.assign(data, extraData);
+}
+
+async function init(app, base, layout) {
   const files = await (async () => {
     const files = await readdir(path.join('views', base));
     return Promise.all(files.map(async (name) => {
@@ -42,40 +65,25 @@ async function init(app, base, onReady, layout) {
 
   for(const file of files) {
     if(file.isDirectory) {
-      await init(app, path.join(base, file.name), undefined, layout);
+      await init(app, path.join(base, file.name), layout);
     } else if(file.isFile) {
       if (file.name === 'index') {
-        if (hasParam(base)) {
-          app.get(`/${base.replace('/_id', '/:id')}`, async (req, res) => {
-            const data = JSON.parse(
-              await readFile(
-                path.join('data', base.replace('/_id', `/${req.params.id}`), 'index.json'),
-                'utf-8'));
-            data.layout = layout;
-            res.render(path.join(base, file.name), data);
-          });
-        } else {
-          app.get(`/${base}`, async (req, res) => {
-            const data = JSON.parse(
-              await readFile(
-                path.join('data', base, 'index.json'),
-                'utf-8'));
-            data.layout = layout;
-            res.render(path.join(base, file.name), data);
-          });
-        }
+        app.get(getURLPattern(base), async (req, res) => {
+          const data = await loadJSONdata(
+            getDataPath(base, req),
+            { layout });
+          res.render(path.join(base, file.name), data);
+        });
       }
     } else {
       throw new Error(`Found object that isn't a file or a directory: ${f.name}`);
     }
   }
 
-  if(is_root) {
-    onReady();
-  }
+  return this;
 }
 
-init(app, '', () => {
+init(app, '').then(() => {
   app.listen(port, () => {
     console.log(`Server started at http://0.0.0.0:${port}`);
   });
