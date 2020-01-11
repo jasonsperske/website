@@ -1,0 +1,99 @@
+{
+  "machineName": "dineane",
+  "justification": "This computer belonged to my mother and was the computer that I first learend to program on. It is covered with stickers with her handwriting that describe it's configuration and I wanted to preserve the configuration as well as restore it's functionality.",
+  "bios": {
+    "hdd": {
+      "c": {
+        "type": 47,
+        "cyln": 3831,
+        "head": 16,
+        "wpcom": 65535,
+        "lzone": 3831,
+        "sect": 63,
+        "size": {
+          "value": 1886,
+          "unit": "MB"
+        }
+      }
+    },
+    "fdd": {
+      "a": {
+        "type": "1.2 MB",
+        "sizePhysical": "5¼\""
+      },
+      "b": {
+        "type": "1.44 MB",
+        "sizePhysical": "3½\""
+      }
+    },
+    "settings": {
+      "bootOrder": ["A:", "C:"],
+      "cacheMemory": true,
+      "shadowRamOption": "Main",
+      "hiddenDRAMRefresh": true,
+      "memoryBlock": [
+        {
+          "define": false,
+          "size": {
+            "value": 4,
+            "unit": "Kb"
+          },
+          "startAddr": {
+            "value": 0,
+            "unit": "KB"
+          }
+        },
+        {
+          "define": false,
+          "size": {
+            "value": 4,
+            "unit": "Kb"
+          },
+          "startAddr": {
+            "value": 0,
+            "unit": "KB"
+          }
+        },
+        {
+          "define": false,
+          "size": {
+            "value": 4,
+            "unit": "Kb"
+          },
+          "startAddr": {
+            "value": 0,
+            "unit": "KB"
+          }
+        }
+      ]
+    }
+  },
+  "hardware": {
+    "video": [
+      {
+        "id": "TVGA8900CL",
+        "name": "Trident SVGA",
+        "model": "8900CL",
+        "jumpers": {}
+      }
+    ],
+    "mouse": {
+      "port": "COM2",
+      "brand": "Top Data",
+      "buttons": 3
+    },
+    "sound": {
+      "id": "SBCT1350B",
+      "name": "Sound Blaster 1.0 rev. B",
+      "model": "1350B"
+    },
+    "io": [
+      {
+        "id": "WinBondISA"
+      },
+      {
+        "id": ""
+      }
+    ]
+  }
+}

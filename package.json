@@ -1,0 +1,14 @@
+{
+  "name": "static_site",
+  "version": "1.0.0",
+  "description": "A site dedicated to my computers",
+  "main": "local.js",
+  "author": "Jason Sperske",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  }
+}

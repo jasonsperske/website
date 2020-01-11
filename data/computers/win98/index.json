@@ -1,0 +1,95 @@
+{
+  "machineName": "win98",
+  "justification": "",
+  "bios": {
+    "hdd": {
+      "c": {
+        "type": 47,
+        "cyln": 3831,
+        "head": 16,
+        "wpcom": 65535,
+        "lzone": 3831,
+        "sect": 63,
+        "size": {
+          "value": 1886,
+          "unit": "MB"
+        }
+      }
+    },
+    "fdd": {
+      "a": {
+        "type": "1.44 MB",
+        "sizePhysical": "3½\""
+      }
+    },
+    "settings": {
+      "bootOrder": ["A:", "C:"],
+      "cacheMemory": true,
+      "shadowRamOption": "Main",
+      "hiddenDRAMRefresh": true,
+      "memoryBlock": [
+        {
+          "define": false,
+          "size": {
+            "value": 4,
+            "unit": "Kb"
+          },
+          "startAddr": {
+            "value": 0,
+            "unit": "KB"
+          }
+        },
+        {
+          "define": false,
+          "size": {
+            "value": 4,
+            "unit": "Kb"
+          },
+          "startAddr": {
+            "value": 0,
+            "unit": "KB"
+          }
+        },
+        {
+          "define": false,
+          "size": {
+            "value": 4,
+            "unit": "Kb"
+          },
+          "startAddr": {
+            "value": 0,
+            "unit": "KB"
+          }
+        }
+      ]
+    }
+  },
+  "hardware": {
+    "video": [
+      {
+        "id": "MGA",
+        "name": "MGA",
+        "model": "",
+        "jumpers": {}
+      }
+    ],
+    "mouse": {
+      "port": "COM1",
+      "brand": "",
+      "buttons": 2
+    },
+    "sound": {
+      "id": "SB",
+      "name": "",
+      "model": ""
+    },
+    "io": [
+      {
+        "id": ""
+      },
+      {
+        "id": ""
+      }
+    ]
+  }
+}
