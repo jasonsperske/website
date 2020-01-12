@@ -1,68 +1,59 @@
 <div class='row'>
-  <div class="col-md-9">
+  <div class="col-9">
     <div class='row'>
-      <div class="col-md-12">
+      <div class="col">
         <h1>Jason Sperske</h1>
         <p>I write a lot of software</p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col">
         <h2>Projects I have started</h2>
       </div>
     </div>
     <div class='row'>
     <% projectsStarted.forEach((project) => { %>
-      <div class="col-md-6">
-        <div class="panel panel-default">
-          <div class="panel-heading"><%=project.name%> (<%=project.yearsActive%>)</div>
-          <div class="panel-body">
-            <p class='ProjectBio'><%=project.description%></p>
-          </div>
-          <div class="panel-footer">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header"><%=project.name%> (<%=project.yearsActive%>)</div>
+          <div class="card-body">
+            <div class="text-center">
+              <img class="img-fluid" src="<%=project.image%>" alt=""/>
+            </div>
+            <p class="card-text"><%-project.description%></p>
             <a href='project/<%=project.id%>' class='btn btn-primary'>learn more</a>
           </div>
-          <% if (project.status) { %>
-          <div class="panel-footer">
-            <strong>Status:</strong> <%-project.status%>
+        <% if (project.status) { %>
+          <div class="card-footer text-muted"><strong>Status:</strong> <%-project.status%></div>
+        <% } %>
+        </div>
+      </div>
+    <% }) %>
+    </div>
+
+    <div class='row'>
+      <div class="col">
+        <h2>Things I have done for no good reason</h2>
+      </div>
+    </div>
+    <div class='row'>
+    <% projectsPersonal.forEach((project) => { %>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header"><%=project.name%></div>
+          <div class="card-body">
+            <p class="card-text"><%-project.description%></p>
+            <a href='<%=project.href%>' class='btn btn-primary'>learn more</a>
           </div>
-          <% } %>
         </div>
       </div>
     <% }) %>
     </div>
   </div>
-  <div class='col-md-3'>
-    <div class="panel-group" id="accordion">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseHelp">
-              <span class="fa fa-plus-square-o"></span> Help
-            </a>
-          </h4>
-        </div>
-        <div id="collapseHelp" class="panel-collapse collapse in">
-          <div class="panel-body">
-            <p><b>S P E R S K E</b><br/>/sp&#601;r - sk&#275;/</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseContact">
-              <span class="fa fa-plus-square-o"></span> Places you can find me
-            </a>
-          </h4>
-        </div>
-        <div id="collapseContact" class="panel-collapse collapse in">
-          <div class="panel-body">
-            <a class="btn btn-block btn-info" href="http://stackoverflow.com/users/16959/jason-sperske"><i class="fa fa-stack-overflow"></i> StackOverflow</a>
-            <a class="btn btn-block btn-info" href="https://github.com/jasonsperske"><i class="fa fa-github"></i> Github</a>
-            <a class="btn btn-block btn-info" href="https://gist.github.com/jasonsperske"><i class="fa fa-github-square"></i> Gist</a>
-            <a class="btn btn-block btn-info" href="https://www.kickstarter.com/profile/sperske"><i class="fa fa-credit-card"></i> Kickstarter</a>
-            <a class="btn btn-block btn-info" href="https://www.linkedin.com/in/jasonsperske"><i class="fa fa-linkedin"></i> LinkedIn</a>
-            <a class="btn btn-block btn-success" href="http://careers.stackoverflow.com/sperske"><i class="fa fa-paperclip"></i> Résumé</a>
-          </div>
-        </div>
-      </div>
-    </div>
-<a href='computers/'>Computers</a>
+  <div class='col'>
+    <h4>Places you can find me</h4>
+  <% bio.links.forEach(link => { %>
+    <a class="btn btn-block btn-info" href="<%=link.href%>"><i class="fa fa-<%=link['fa-icon']%>"></i> <%=link.label%></a>
+  <% }) %>
+  </div>
+</div>

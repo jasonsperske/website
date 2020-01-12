@@ -10,6 +10,7 @@ const port = process.env.port || 3000;
 
 app.set('view engine', 'ejs');
 app.use(require('express-ejs-layouts'));
+app.use('/static', express.static('static'));
 
 function hasParam(base) {
   return base.endsWith('/_id')
@@ -28,7 +29,6 @@ function getDataPath(base, req) {
   Object.keys(req.params).forEach(param => {
     dataPath = dataPath.replace(`/_${param}`, `/${req.params[param]}`);
   });
-  console.log(dataPath);
   return dataPath;
 }
 
