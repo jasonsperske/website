@@ -29,46 +29,46 @@
   "projectsStarted": [{
       "id": "fan-st",
       "name": "Fan Street Team",
-      "yearsActive": "2013"
+      "yearsActive": "2013",
       "description": "Fan Street Team (fan.st) brought the core idea of RadioMixtape back with a pure HTML5 Audio player, streamlined music encoding, and the ability to hide music tracks in physical spaces with the use of the JavaScript GeoLocation API",
       "status": "Now operated as <a href=\"http://fanverve.com/\">FanVerve.com</a>"
     },
     {
       "id": "xrae",
       "name": "XRAE",
-      "yearsActive": "2007-2010"
+      "yearsActive": "2007-2010",
       "description": "XRAE is a risk assessment platform with a single questionnaire (with over 600 personal medical questions) and over 100,000 underwriting rules programmed in a web based authoring environment that assesses the health class for 13 leading insurance carriers. XRAE is used as a pre-screener for a growing list of insurance carriers as well as a customer manager for thousands of field agents.",
       "status": "Acquired by <a href=\"https://www.businesswire.com/news/home/20130205006086/en/iPipeline-Acquires-XRAE\">iPipeline</a>"
     },
     {
       "id": "degree-designer",
       "name": "Degree Designer",
-      "yearsActive": "2005-2007"
+      "yearsActive": "2005-2007",
       "description": "The Blue Jay Degree Designer is an automated advisement system that manages Student/Counselor communication, provides dynamic and interactive Ed Plan, Semester Plan and Schedule building as well as rich reporting of Student Trends, Success Analysis and Program Effectiveness."
     },
     {
       "id": "fast-schedule",
       "name": "FastSchedule.net",
-      "yearsActive": "2005-2007"
+      "yearsActive": "2005-2007",
       "description": "FastSchedule.net is a powerful web application that acts like a search engine for student schedules."
     },
     {
       "id": "radio-mixtape",
       "name": "Radio Mixtape",
-      "yearsActive": "2007"
+      "yearsActive": "2007",
       "description": "Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A \"Radio Mixtape\" is a mixtape made up songs played on the radio).",
       "status": "Superceded by Fan Street Team."
     },
     {
       "id": "mix-box",
       "name": "MixBox.mobi",
-      "yearsActive": "2007"
+      "yearsActive": "2007",
       "description": "MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing."
     }
   ],
   "projectsPersonal": [{
       "href": "/wad/",
-      "name": "WADParser.py"
+      "name": "WADParser.py",
       "description": "A Python script that parses DOOM WAD files and renders them as SVG."
     },
     {

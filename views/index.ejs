@@ -13,174 +13,20 @@
         <div class="panel panel-default">
           <div class="panel-heading"><%=project.name%> (<%=project.yearsActive%>)</div>
           <div class="panel-body">
+            <p class='ProjectBio'><%=project.description%></p>
+          </div>
+          <div class="panel-footer">
+            <a href='project/<%=project.id%>' class='btn btn-primary'>learn more</a>
+          </div>
+          <% if (project.status) { %>
+          <div class="panel-footer">
+            <strong>Status:</strong> <%-project.status%>
+          </div>
+          <% } %>
+        </div>
+      </div>
     <% }) %>
-      <div class="col-md-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">Fan Street Team (2013)</div>
-          <div class="panel-body">
-            <p class='text-center ProjectLogo FanSt'>
-  <img src='project/fanst/logo.png' alt=''/>
-</p>
-<p class='ProjectBio'>Fan Street Team (fan.st) brought the core idea of RadioMixtape back with a pure HTML5 Audio player, streamlined music encoding, and the ability to hide music tracks in physical spaces with the use of the JavaScript GeoLocation API</p>
-</div>
-<div class="panel-footer">
-<a href='project/FanStreetTeam.html' class='btn btn-primary'>learn more</a>
-</div>
-<div class="panel-footer">
-<strong>Status:</strong> Now operated as <a href='http://fanverve.com/'>FanVerve.com</a>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">XRAE (2007-2010)</div>
-<div class="panel-body">
-<p class='ProjectLogo'>
-  <img src='project/xrae/logo.png' class='img-responsive' alt=''/>
-</p>
-<p class='ProjectBio'>XRAE is a risk assessment platform with a single questionnaire (with over 600 personal medical questions) and over 100,000 underwriting rules programmed in a web based authoring environment that assesses the health class for 13 leading insurance carriers.  XRAE is used as a pre-screener for a growing list of insurance carriers as well as a customer manager for thousands of field agents.</p>
-</div>
-<div class="panel-footer">
-<a href='project/XRAE.html' class='btn btn-primary'>learn more</a>
-</div>
-<div class="panel-footer">
-<strong>Status:</strong> Acquired by <a href='http://www.ipipeline.com/news/press-release-detail.php?id=83'>iPipeline</a>
-</div>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">Degree Designer (2005-2007)</div>
-<div class="panel-body">
-<p class='ProjectLogo'>
-  <img src='project/degreedesigner/logo.png' class='img-responsive' alt=''/>
-</p>
-<p class='ProjectBio'>The Blue Jay Degree Designer is an automated advisement system that manages Student/Counselor communication, provides dynamic and interactive Ed Plan, Semester Plan and Schedule building as well as rich reporting of Student Trends, Success Analysis and Program Effectiveness.</p>
-</div>
-<div class="panel-footer"><a href='project/DegreeDesigner.html' class='btn btn-primary'>learn more</a></div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">FastSchedule.net (2005-2007)</div>
-<div class="panel-body">
-<p class='ProjectLogo'>
-  <img src='project/degreedesigner/logo.png' class='img-responsive' alt=''/>
-</p>
-<p class='ProjectBio'>FastSchedule.net is a powerful web application that acts like a search engine for student schedules.</p>
-</div>
-<div class="panel-footer"><a href='project/FastSchedule.html' class='btn btn-primary'>learn more</a></div>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">Radio Mixtape (2007)</div>
-<div class="panel-body">
-<p class='ProjectLogo'>
-  <img src='project/radiomixtape/logo.jpg' class='img-responsive' alt=''/>
-</p>
-<p class='ProjectBio'>Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A "Radio Mixtape" is a mixtape made up songs played on the radio).</p>
-</div>
-<div class="panel-footer"><a href='project/RadioMixtape.html' class='btn btn-primary'>learn more</a></div>
-<div class="panel-footer">
-<strong>Status:</strong> Superceded by Fan Street Team.</a>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">MixBox.mobi (2007)</div>
-<div class="panel-body">
-<p class='ProjectLogo'>
-  <img src='project/radiomixtape/logo.jpg' class='img-responsive' alt=''/>
-</p>
-<p class='ProjectBio'>MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing.</p>
-</div>
-<div class="panel-footer"><a href='project/MixBox.html' class='btn btn-primary'>learn more</a></div>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-12">
-<h2>Projects I have worked on</h2>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">GNLD (2010-2013)</div>
-<div class="panel-body">
-<p class='ProjectBio'>GNLD International LLC is an organization with over 500 employees and offices in 7 countries.  I was the Director of Informaiton Systems at their world headquarters in Fremont, CA and designed and implemented thier gloabl GNLD.com (consumer facing website) and GNLD.net (distributor facing/back office website)</p>
-</div>
-<div class="panel-footer"><a href='project/GNLD.html' class='btn btn-primary'>learn more</a></div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">... (2014)</div>
-<div class="panel-body">
-<p class='ProjectBio'><i>Still a secret</i></p>
-</div>
-<div class="panel-footer"><a href='#' class='btn btn-primary disabled'>learn more</a></div>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-12">
-<h2>Things I've done for no good reason</h2>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">WADParser.py</div>
-<div class="panel-body">
-<p class='ProjectBio'>a Python script that parses DOOM WAD files and renders them as SVG.</p>
-</div>
-<div class="panel-footer">
-<a href='wad/' class='btn btn-primary'>learn more</a>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">GRPParser.py</div>
-<div class="panel-body">
-<p class='ProjectBio'>A Python script that parses Duke 3D GRP files and renders as SVG.</p>
-</div>
-<div class="panel-footer">
-<a href='grp/' class='btn btn-primary'>learn more</a>
-</div>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">adventure.js</div>
-<div class="panel-body">
-<p class='ProjectBio'>An implementation of the King's Quest engine in JavaScript using the <code>&lt;canvas&gt;</code> element.</p>
-</div>
-<div class="panel-footer">
-<a href='adventure/' class='btn btn-primary'>learn more</a>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="panel panel-default">
-<div class="panel-heading">...</div>
-<div class="panel-body">
-<p class='ProjectBio'>I'm sure something else will come up, and when it does this is where it will go.</p>
-</div>
-<div class="panel-footer"><a href='#' class='btn btn-primary disabled'>learn more</a></div>
-</div>
-</div>
-</div>
-
+    </div>
   </div>
   <div class='col-md-3'>
     <div class="panel-group" id="accordion">
