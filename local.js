@@ -17,15 +17,16 @@ function hasParam(base) {
 }
 
 function getURLPattern(base) {
-  if (hasParam(base)) {
-    return `/${base.replace('/_id', '/:id')}`;
+  let urlPattern = base.replace('\\', '/');
+  if (hasParam(urlPattern)) {
+    return `/${urlPattern.replace('/_id', '/:id')}`;
   } else {
-    return `/${base}`;
+    return `/${urlPattern}`;
   }
 }
 
 function getDataPath(base, req) {
-  let dataPath = base;
+  let dataPath = base.replace('\\', '/');
   Object.keys(req.params).forEach(param => {
     dataPath = dataPath.replace(`/_${param}`, `/${req.params[param]}`);
   });
