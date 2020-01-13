@@ -73,6 +73,14 @@
     }
   ],
   "projectsPersonal": [{
+      "href": "https://sndtst.com/",
+      "name": "SND TST",
+      "description": "A Sound Test for as many games as I can find"
+    }, {
+      "href": "/computers/",
+      "name": "Collected and Restored Old Computers",
+      "description": "My growing collecitons of PCs from the late 80's to the mid 2000's."
+    }, {
       "href": "/wad/",
       "name": "WADParser.py",
       "description": "A Python script that parses DOOM WAD files and renders them as SVG."
@@ -86,11 +94,6 @@
       "href": "/adventure/",
       "name": "adventure.js",
       "description": "An implementation of the King's Quest engine in JavaScript using the <code>&lt;canvas&gt;</code> element."
-    },
-    {
-      "href": "https://sndtst.com/",
-      "name": "SND TST",
-      "description": "A Sound Test for as many games as I can find"
     }
   ]
 }
