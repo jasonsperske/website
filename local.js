@@ -42,9 +42,8 @@ async function loadJSONdata(file, extraData) {
 }
 
 async function init(app, base, layout) {
-  const files = await (async () => {
-    const files = await readdir(path.join('views', base));
-    return Promise.all(files.map(async (name) => {
+  const files = await
+    Promise.all((await readdir(path.join('views', base))).map(async (name) => {
       const stats = await stat(path.join('views', base, name));
       const parsedName = path.parse(name);
       return {
@@ -54,7 +53,6 @@ async function init(app, base, layout) {
         isFile: stats.isFile()
       };
     }));
-  })();
 
   const layouts = files.filter(f => f.isFile && f.name === 'layout');
   if(layouts.length === 1) {
