@@ -1,5 +1,18 @@
-<% computers.forEach((computer) => { %>
-  <ul>
-    <li><a href='<%=computer%>/'><%=computer%> &mdash; <%= system[computer].intro %></a></li>
-  </ul>
-<% }) %>
+<table class='table'>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Computer</th>
+      <th>Introduction</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% computers.forEach((computer) => { %>
+    <tr>
+      <td><a href='<%=computer%>/' class='btn btn-info'>view</a></td>
+      <td><a href='<%=computer%>/'><code><%=computer%></code></a></td>
+      <td><%= system[computer].intro %></td>
+    </tr>
+  <% }) %>
+  </tbody>
+</table>
