@@ -12,17 +12,33 @@ app.set('view engine', 'ejs');
 app.use(require('express-ejs-layouts'));
 app.use('/static', express.static('static'));
 
-function hasParam(base) {
-  return base.endsWith('/_id')
+function getParams(base) {
+  let params = [];
+  const regex = /\/_(\w*)/gm;
+  let m;
+  while ((m = regex.exec(base)) !== null) {
+    if (m.index === regex.lastIndex) {
+      regex.lastIndex++;
+    }
+    m.forEach((match, groupIndex) => {
+      if(groupIndex === 1) {
+        params.push(match);
+      }
+    });
+  }
+
+  return params;
 }
 
 function getURLPattern(base) {
   let urlPattern = base.replace('\\', '/');
-  if (hasParam(urlPattern)) {
-    return `/${urlPattern.replace('/_id', '/:id')}`;
-  } else {
-    return `/${urlPattern}`;
+  let params = getParams(urlPattern);
+  if (params.length > 0) {
+    for(const param of params) {
+      urlPattern = urlPattern.replace(`/_${param}`, `/:${param}`)
+    }
   }
+  return `/${urlPattern}`;
 }
 
 function getDataPath(base, req) {
