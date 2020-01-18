@@ -1,6 +1,6 @@
 {
-  "computers": ["dineane", "retrosleeper", "win98", "winxp"],
-  "system" : {
+  "systems": ["dineane", "retrosleeper", "win98", "winxp"],
+  "systemInfo" : {
     "dineane": {
       "intro": "386DX33 Running MS-DOS 5.0"
     },

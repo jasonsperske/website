@@ -1,0 +1,18 @@
+<table class='table'>
+  <thead>
+    <tr>
+      <th></th>
+      <th>System</th>
+      <th>Introduction</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% systems.forEach((system) => { %>
+    <tr>
+      <td><a href='<%=system%>/' class='btn btn-info'>view</a></td>
+      <td><a href='<%=system%>/'><code><%=system%></code></a></td>
+      <td><%= systemInfo[system].intro %></td>
+    </tr>
+  <% }) %>
+  </tbody>
+</table>

@@ -1,0 +1,17 @@
+{
+  "systems": ["dineane", "retrosleeper", "win98", "winxp"],
+  "systemInfo" : {
+    "dineane": {
+      "intro": "386DX33 Running MS-DOS 5.0"
+    },
+    "retrosleeper": {
+      "intro": "Pentium 166 MMX Running MS-DOS 6.22 with Windows 3.11"
+    },
+    "win98": {
+      "intro": "Pentium II 450 Running Windows 98 SE"
+    },
+    "winxp": {
+      "intro": "Pentium 4 Running Windows XP Home"
+    }
+  }
+}

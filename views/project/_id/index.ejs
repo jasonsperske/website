@@ -7,6 +7,6 @@
 <% }) %>
 </ul>
 <% } %>
-<% if (locals.videos) { %><%-about%><% } %>
+<% if (locals.videos) { %><%-locals.about ? about : ''%><% } %>
 <h2>What Technologies Did I Use?</h2>
 <%-stack%>
