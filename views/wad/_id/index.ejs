@@ -1,0 +1,91 @@
+<style type="text/css">
+  img {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+  }
+  .thumbnail {
+  	background-color: #ededed;
+  }
+  .thumbnail h3 {
+  	color: #000;
+  }
+</style>
+<div class="row">
+  <div class="col-sm-9">
+    <div class="jumbotron">
+      <h1><%=name%></h1>
+    </div>
+  <% maps.forEach((map) => { %>
+    <div class='row'>
+      <div class="col-sm-12">
+        <a name='<%=map%>'></a>
+        <div class="thumbnail">
+          <h3><%=map%></h3>
+          <img src='http://jason.sperske.com/wad/<%=name%>/<%=map%>.svg'/>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+  </div>
+  <div class='col-sm-3'>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseHelp">
+              <span class="fa fa-plus-square-o"></span> Information
+            </a>
+          </h4>
+        </div>
+        <div id="collapseHelp" class="panel-collapse collapse in">
+          <div class="panel-body">
+          <% if (!locals.isProtected) { %>
+            <a class="btn btn-primary btn-block" role="button" href="http://jason.sperske.com/wad/<%=name%>/<%=name%>">Download WAD</a>
+          <% } %>
+            <a class="btn btn-default btn-block" role="button" href="/wad/">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseMaps">
+            <span class="fa fa-plus-square-o"></span> Maps
+          </a>
+        </h4>
+      </div>
+      <div id="collapseMaps" class="panel-collapse collapse">
+        <div class="panel-body">
+        <% maps.forEach((map) => { %>
+          <a class="btn btn-primary btn-block" role="button" href="#<%=map%>"><%=map%></a>
+        <% }) %>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseContact">
+            <span class="fa fa-plus-square-o"></span> Places you can find me
+          </a>
+        </h4>
+      </div>
+      <div id="collapseContact" class="panel-collapse collapse">
+        <div class="panel-body">
+          <a class="btn btn-block btn-danger" href="http://jason.sperske.com"><i class="fa fa-user"></i> Portfolio</a>
+          <a class="btn btn-block btn-danger" href="https://stackoverflow.com/users/16959/jason-sperske"><i class="fa fa-stack-overflow"></i> StackOverflow</a>
+          <a class="btn btn-block btn-danger" href="https://github.com/jasonsperske"><i class="fa fa-github"></i> Github</a>
+          <a class="btn btn-block btn-danger" href="https://gist.github.com/jasonsperske"><i class="fa fa-github-square"></i> Gist</a>
+          <a class="btn btn-block btn-danger" href="https://www.kickstarter.com/profile/sperske"><i class="fa fa-credit-card"></i> Kickstarter</a>
+          <a class="btn btn-block btn-danger" href="https://www.linkedin.com/in/jasonsperske"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a class="btn btn-block btn-success" href="http://careers.stackoverflow.com/sperske"><i class="fa fa-paperclip"></i> Résumé</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
