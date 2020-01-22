@@ -31,8 +31,7 @@
       "cacheMemory": true,
       "shadowRamOption": "Main",
       "hiddenDRAMRefresh": true,
-      "memoryBlock": [
-        {
+      "memoryBlock": [{
           "define": false,
           "size": {
             "value": 4,
@@ -68,32 +67,27 @@
       ]
     }
   },
-  "hardware": {
-    "video": [
-      {
-        "id": "TVGA8900CL",
-        "name": "Trident SVGA",
-        "model": "8900CL",
-        "jumpers": {}
-      }
-    ],
-    "mouse": {
+  "hardware": ["i386DX33", "TVGA8900CL", "SBCT1350B", "TopDataMouse"],
+  "hardwareInfo": {
+    "i386DX33": {
+      "type": "cpu",
+      "name": "Intel 80386DX 33MHz"
+    },
+    "TVGA8900CL": {
+      "type": "video",
+      "name": "Trident SVGA",
+      "model": "8900CL"
+    },
+    "TopDataMouse": {
+      "type": "mouse",
       "port": "COM2",
-      "brand": "Top Data",
+      "name": "Top Data 3 Button Serial Mouse",
       "buttons": 3
     },
-    "sound": {
-      "id": "SBCT1350B",
-      "name": "Sound Blaster 1.0 rev. B",
+    "SBCT1350B": {
+      "type": "soundcard",
+      "name": "Sound Blaster 8-Bit 2.0 rev. B",
       "model": "1350B"
-    },
-    "io": [
-      {
-        "id": "WinBondISA"
-      },
-      {
-        "id": ""
-      }
-    ]
+    }
   }
 }

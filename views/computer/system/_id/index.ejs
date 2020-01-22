@@ -1,1 +1,32 @@
-<h1><code><%=machineName%></code></h1>
+<h1>
+  <span class="badge badge-primary">system:</span>
+  <code><%=machineName%></code>
+</h1>
+<div class='row'>
+  <div class="col-9">
+    <h2>Hardware</h2>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% hardware.forEach((part) => { %>
+        <tr>
+          <td><span class="badge badge-primary"><%= hardwareInfo[part].type %></span></td>
+          <td><a href='/computer/hardware/<%=part%>/'><%= hardwareInfo[part].name %></a></td>
+        </tr>
+      <% }) %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <%- justification %>
+      </div>
+    </div>
+  </div>
+</div>

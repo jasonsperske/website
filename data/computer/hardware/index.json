@@ -2,7 +2,8 @@
   "hardware": ["TVGA8900CL"],
   "hardwareInfo": {
     "TVGA8900CL": {
-      "type": "VIDEO"
+      "type": "video",
+      "installed": "dineane"
     }
   }
 }
