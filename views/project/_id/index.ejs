@@ -1,12 +1,25 @@
-<h1><%=name%></h1>
-<h2>What Is It?</h2>
-<% if (locals.videos) { %>
-<ul>
-<% videos.forEach(video => { %>
-  <li><a href="<%=video.href%>"><%=video.label%></a></li>
-<% }) %>
-</ul>
-<% } %>
-<% if (locals.videos) { %><%-locals.about ? about : ''%><% } %>
-<h2>What Technologies Did I Use?</h2>
-<%-stack%>
+<div class='row'>
+  <div class="col-9">
+    <h1><%=name%></h1>
+    <h2>What Is It?</h2>
+    <% if (locals.videos) { %>
+    <ul>
+    <% videos.forEach(video => { %>
+      <li><a href="<%=video.href%>"><%=video.label%></a></li>
+    <% }) %>
+    </ul>
+    <% } %>
+    <% if (locals.about) { %><%-locals.about ? about : ''%><% } %>
+    <h2>What Technologies Did I Use?</h2>
+    <%-stack%>
+  </div>
+  <div class="col">
+    <h4>Places you can find me</h4>
+    <a class="btn btn-block btn-info" href="https://stackoverflow.com/users/16959/jason-sperske"><i class="fa fa-stack-overflow"></i> Stack Overflow</a>
+    <a class="btn btn-block btn-info" href="https://github.com/jasonsperske"><i class="fa fa-github"></i> GitHub</a>
+    <a class="btn btn-block btn-info" href="https://gist.github.com/jasonsperske"><i class="fa fa-github-square"></i> Gist</a>
+    <a class="btn btn-block btn-info" href="https://www.kickstarter.com/profile/sperske"><i class="fa fa-credit-card"></i> Kickstarter</a>
+    <a class="btn btn-block btn-info" href="https://www.linkedin.com/in/jasonsperske"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    <a class="btn btn-block btn-info" href="http://careers.stackoverflow.com/sperske"><i class="fa fa-paperclip"></i> Résumé</a>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+{
+  "name": "Radio Mixtape",
+  "about": "<p>Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A “Radio Mixtape” is a mixtape made up songs played on the radio).  This was also a laboratory to experiment with more cutting edge code that my education software company had a need for.  As Radio Mixtape grew to became a music promotion company representing a handful of local artists and a great way to go to introduce my self to artists that I respected.</p><p>I set out to build Radio Mixtape with the hope of meeting all members of Counting Crows.  It led me to Australia, invited to hip exclusive concerts in Hollywood.  Radio Mixtape stretched my JavaScript abilities, and gave me real experience running a system that scaled out to tens of thousands of users.</p>",
+  "stack": "<p>Radio Mixtape was a <code>Java web application</code> (built on the same code base as the Blue Jay Education projects).  Using <code>Tomcat</code> as the app container, and <code>MySQL</code> for the back end (it used a custom ORM called libBlueJay, this was developed before Hibernate was a viable solution). It also comprised of a suite of command line utilities to manage the growing media library as well as a rich API and a few Windows utilities that sent alerts of new mixtapes or allowed a mixtape to be burned to a CD. The interface was 100% valid <code>XHTML</code> with advanced use of <code>JavaScript</code> and <code>Flash</code>. On this project I was the architect, developer, system administrator, <code>CSS</code> and <code>HTML</code> designer and content author, as well as the manager of artists and label relationships.</p>",
+  "videos": [
+    {
+      "href": "http://sperske.com/screencasts/radio-mixtape/movie.mp4",
+      "label": "Watch a general overview screen cast of Radio Mixtape"
+    }
+  ]
+}

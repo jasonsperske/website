@@ -1,0 +1,23 @@
+{
+  "name": "XRAE",
+  "about": "<p>XRAE is the most advanced project I have ever created.  Built on a custom taglib based framework, and utilizing 8 programming languages (including one custom language called Risk Meta Language for which I have submitted a <a href=\"http://www.google.com/patents/US20090070152\">patent application</a>).  XRAE is a risk assessment platform with a single questionnaire (with over 600 personal medical questions) and over 100,000 underwriting rules programmed in a web based authoring environment that assesses the health class for 13 leading insurance carriers.  XRAE is used as a pre-screener for a growing list of insurance carriers as well as a customer manager for thousands of field agents.</p><p>I grew this company from the initial idea, to the ultimate delivered product which in now maintained by sales people, technical support and underwriting experts.</p>",
+  "stack": "<p>XRAE is both a <code>Java Web Application</code> as well as a <code>.NET Web Service</code> (I ported the core library from <code>Java</code> to <code>C#</code>).  It is supported by a rich array of <code>Bash</code> scripts and <code>Ant</code> based build automation and unit testing.  It contains a full XML API (with <code>XSL</code> to style output) and links to 3rd party back end systems for extending the functionality of XRAE.  It also has a <code>SOAP</code> based Web Service layer and <code>SAML</code> based authentication, and has a rich reporting API and a suite of reporting utilities.  For the “find similar” feature demonstrated in the screen cast above, I wrote <code>Java</code> code that interfaced our Quote XML standard with <code>Apache Lucene</code> to leverage the wisdom of the network in making better underwriting decisions.  On this project I was the inventor, architect, programmer (<code>Java</code>, <code>JavaScript</code>, <code>C#</code>, <code>Bash</code>, <code>Ant</code>, <code>WSDL</code>, <code>XSL</code>), <code>CSS</code>/<code>HTML</code> designer, system administrator (from a load balanced array of Ubuntu Linux servers, to the current configuration of managed servers at RackSpace running Red Hat Linux).  I also wrote and composed the screen casts and early sales PowerPoints.</p>",
+  "videos": [
+    {
+      "href": "http://sperske.com/screencasts/xrae/movie.mp4",
+      "label": "Watch a general overview screen cast of XRAE"
+    },
+    {
+      "href": "http://sperske.com/screencasts/xrae/mobile.mp4",
+      "label": "Watch a screen cast of the XRAE mobile interface"
+    },
+    {
+      "href": "http://sperske.com/screencasts/xrae/iphone.mp4",
+      "label": "Watch a screen cast of XRAE iPhone support"
+    },
+    {
+      "href": "http://sperske.com/screencasts/xrae/lucene.mp4",
+      "label": "Watch a screen cast of XRAE’s Find Similar feature (powered by Lucene)"
+    }
+  ]
+}
