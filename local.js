@@ -31,7 +31,7 @@ function getParams(base) {
 }
 
 function getURLPattern(base) {
-  let urlPattern = base.replace('\\', '/');
+  let urlPattern = base.replace(/\\/g, '/');
   let params = getParams(urlPattern);
   if (params.length > 0) {
     for(const param of params) {
@@ -42,7 +42,7 @@ function getURLPattern(base) {
 }
 
 function getDataPath(base, req) {
-  let dataPath = base.replace('\\', '/');
+  let dataPath = base.replace(/\\/g, '/');
   Object.keys(req.params).forEach(param => {
     dataPath = dataPath.replace(`/_${param}`, `/${req.params[param]}`);
   });
