@@ -30,13 +30,19 @@ function getParams(base) {
   return params;
 }
 
-function getURLPattern(base) {
+function getURLPattern(base, path) {
   let urlPattern = base.replace(/\\/g, '/');
   let params = getParams(urlPattern);
   if (params.length > 0) {
     for(const param of params) {
       urlPattern = urlPattern.replace(`/_${param}`, `/:${param}`)
     }
+  }
+  if (path) {
+    if (urlPattern.length > 1) {
+      urlPattern += '/';
+    }
+    urlPattern += path;
   }
   return `/${urlPattern}`;
 }
@@ -85,10 +91,13 @@ async function init(app, base, layout) {
     } else if(file.isFile) {
       if (file.name === 'index') {
         app.get(getURLPattern(base), async (req, res) => {
-          const data = await loadJSONdata(
-            getDataPath(base, req),
-            { layout });
+          const dataPath = getDataPath(base, req);
+          const data = await loadJSONdata(dataPath, { layout, dataPath });
           res.render(path.join(base, file.name), data);
+        });
+        app.get(getURLPattern(base, 'index.json'), async (req, res) => {
+          const dataPath = getDataPath(base, req);
+          res.json(await loadJSONdata(dataPath, { }));
         });
       }
     } else {
