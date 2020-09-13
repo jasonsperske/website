@@ -1,6 +1,7 @@
 $fa-font-path: "/static/fonts" !default;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
+@import "../../node_modules/lity/dist/lity.css";
 
 .card {
   margin-bottom: 30px;
