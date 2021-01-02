@@ -72,6 +72,12 @@
       "description": "MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing."
     }
   ],
+  "projectsProfessional": [{
+      "id": "gnld",
+      "name": "GNLD (later rebranded as NeoLife)",
+      "duration": "2010-2013",
+      "description": "GNLD International LLC is an organization with over 500 employees and offices in 7 countries. I was the Director of Informaiton Systems at their world headquarters in Fremont, CA and designed and implemented thier gloabl GNLD.com (consumer facing website) and GNLD.net (distributor facing/back office website)"
+  }],
   "projectsPersonal": [{
       "href": "https://sndtst.com/",
       "name": "SND TST",

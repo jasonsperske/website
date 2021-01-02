@@ -1,0 +1,133 @@
+<script type='text/javascript' src="/static/js/adventure/PxLoader.js"></script>
+<script type='text/javascript' src="/static/js/adventure/PxLoaderImage.js"></script>
+<script type='text/javascript' src='/static/js/adventure/adventure.js'></script>
+<style type='text/css'>
+  #screen {
+    border: thin solid grey;
+    width: 100%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+  .right {
+    transform: rotate(-45deg);
+  }
+  .left {
+    transform: rotate(45deg);
+  }
+  .btn.btn-primary>input[type=radio] {
+    display: none;
+  }
+</style>
+<div class='row'>
+  <div class="col-lg-9">
+    <center>
+      <canvas id="screen" width="320" height="200"></canvas>
+    </center>
+  </div>
+  <div class='col'>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">Input</h4>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+              <input type="text" class="form-control" name='Say' placeholder="Type any quote from <%=name%>"/>
+          </div>
+          <div data-toggle="buttons">
+            <div class="btn-group">
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='NW' autocomplete="off"> <i class='fa fa-hand-o-left left'></i>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='N' autocomplete="off">  <i class='fa fa-hand-o-up'></i>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='NE' autocomplete="off"> <i class='fa fa-hand-o-right right'></i>
+              </label>
+            </div>
+            <br/>
+            <div class="btn-group">
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='W' autocomplete="off"> <i class='fa fa-hand-o-left'></i>
+              </label>
+              <label class="btn btn-primary active">
+                <input type="radio" name="Position" value='C' autocomplete="off" checked> <i class='fa fa-circle-o'></i>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='E' autocomplete="off"> <i class='fa fa-hand-o-right'></i>
+              </label>
+            </div>
+            <br/>
+            <div class="btn-group">
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='SW' autocomplete="off"> <i class='fa fa-hand-o-left right'></i>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='S' autocomplete="off"> <i class='fa fa-hand-o-down'></i>
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="Position" value='SE' autocomplete="off"> <i class='fa fa-hand-o-right left'></i>
+              </label>
+            </div>
+          </div>
+          <button data-action='Say' class='btn btn-block btn-info'>Say</button>
+          <button data-action='ShowThings' class='btn btn-block btn-info'>show things</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type='text/javascript' src='/static/js/adventure/<%=id%>/font.js'></script>
+<script type='text/javascript' src='/static/js/adventure/<%=id%>/scene.js'></script>
+<script>
+$(function() {
+  var loader = new PxLoader(),
+      font = new Font(loader, '/static/js/adventure/<%=id%>'),
+      scene = new Scene(loader, '/static/js/adventure/<%=id%>'),
+      screen = document.getElementById("screen"),
+      context = screen.getContext("2d"),
+      background = loader.addImage('/static/js/adventure/<%=id%>/background.png'),
+      actions = {
+        Say: function() {
+          var text = $('input[name=Say]').val(),
+              align = $('input[name=Position]:checked').val();
+          if(text.length > 0) {
+            drawMessage(text, align, font, scene, context);
+            scene.thing.unshift(clickClear());
+          }
+        },
+        ShowThings: function() {
+          scene.thing.forEach(function(element) {
+            context.fillStyle = '#FF69B4';
+            context.fillRect(element.left, element.top, element.width, element.height);
+          });
+        }
+      };
+  context.imageSmoothingEnabled=false;
+  screen.addEventListener('click', function(event) {
+    var position = getPosition(event, screen, document), i;
+    for(i = 0; i < scene.thing.length; i++) {
+      if(hasCollided(position, scene.thing[i])) {
+        scene.thing[i].click(font, scene, context);
+        break;
+      }
+    }
+  }, false);
+  loader.addCompletionListener(function() {
+    drawScene(scene, context);
+    $('button').on('click', function(e) {
+      var action = $(this).data('action');
+      if(action) {
+        e.preventDefault();
+        drawScene(scene, context);
+        actions[action]();
+      }
+    });
+  });
+  loader.start();
+});
+</script>

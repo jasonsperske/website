@@ -1,0 +1,16 @@
+{
+  "fonts": [
+    {
+      "id": "kq3",
+      "name": "King's Quest III"
+    },
+    {
+      "id": "kq6",
+      "name": "King's Quest IV"
+    },
+    {
+      "id": "nightshade",
+      "name": "Nightshade"
+    }
+  ]
+}

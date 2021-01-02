@@ -4,7 +4,7 @@
   "stack": "<p>MixBox.mobi was a <code>Java web application</code> (built on the same code base as the Blue Jay Education projects).  Using <code>Tomcat</code> as the app container, and <code>MySQL</code> for the back end (it used a custom ORM called libBlueJay, this was developed before Hibernate was a viable solution). The interface was 100% valid <code>XHTML-MP</code> and <code>WML 1.0</code> (with cleaver use of WML Cards).  On this project I was the architect, developer, system administrator, XHTML-MP and WML designer and content author, as well as the manager of artists and label relationships.</p>",
   "videos": [
     {
-      "href": "http://sperske.com/screencasts/mix-box/movie.mp4",
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/mix-box/movie.mp4",
       "label": "Watch a general overview screen cast of MixBox.mobi"
     }
   ]

@@ -5,7 +5,7 @@
     <% if (locals.videos) { %>
     <ul>
     <% videos.forEach(video => { %>
-      <li><a href="<%=video.href%>"><%=video.label%></a></li>
+      <li><a href="<%=video.href%>" data-lity><%=video.label%></a></li>
     <% }) %>
     </ul>
     <% } %>

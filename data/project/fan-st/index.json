@@ -3,7 +3,7 @@
   "stack": "<p>Fan Street Team is built on <code>Tomcat 7</code> as a <code>Java Web App</code>, and combined with some <code>Python</code> scripts for indexing and media encoding.  The frontend is written with <code>Twitter Bootstrap</code> and <code>JavaScript</code> (for <code>HTML5 Audio</code> and <code>GeoLocaiton</code>).</p>",
   "videos": [
     {
-      "href": "http://sperske.com/screencasts/fan-st/movie.mp4",
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/fan-st/movie.mp4",
       "label": "Watch a ‘getting started’ screen cast of Fan Street Team"
     }
   ]

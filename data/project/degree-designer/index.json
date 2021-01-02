@@ -4,7 +4,7 @@
   "stack": "<p>Degree Designer was built entirely in Java.  Using <code>Tomcat</code> as the app container, and <code>MySQL</code> and <code>MSSQL</code> for the back end (it used a custom ORM called libBlueJay, this was developed before Hibernate was a viable solution).  It also comprised of a suite of command line utilities to merge data from legacy Student Information Systems.  The interface was 100% valid <code>XHTML</code> with sparing use of <code>JavaScript</code> and no 3rd party plug-ins (Flash) or pop-ups.  On this project I was the architect, developer, system administrator graphic designer and content author.</p>",
   "videos": [
     {
-      "href": "http://sperske.com/screencasts/degree-designer/movie.mp4",
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/degree-designer/movie.mp4",
       "label": "Watch a general overview screen cast of Degree Designer"
     }
   ]
