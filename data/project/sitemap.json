@@ -1,0 +1,16 @@
+{
+  "collections": [
+    {
+      "resource": "../index.json",
+      "key": "projectsStarted",
+      "type": "array<map>",
+      "mapKey": "id"
+    },
+    {
+      "resource": "../index.json",
+      "key": "projectsProfessional",
+      "type": "array<map>",
+      "mapKey": "id"
+    }
+  ]
+}

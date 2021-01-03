@@ -1,0 +1,10 @@
+{
+  "hasIndex": true,
+  "collections": [
+    {
+      "resource": "index.json",
+      "key": "wads",
+      "type": "array<string>"
+    }
+  ]
+}

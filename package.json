@@ -9,6 +9,7 @@
   "scripts": {
     "build": "node ./node_modules/gulp-cli/bin/gulp.js",
     "buildWatch": "node ./node_modules/gulp-cli/bin/gulp.js watch",
+    "compile": "node compile.js",
     "start": "node ."
   },
   "dependencies": {
@@ -17,6 +18,8 @@
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
     "font-awesome": "^4.7.0",
+    "fs-extra": "^9.0.1",
+    "got": "^11.8.1",
     "jquery": "^3.5.1",
     "lity": "^2.4.1",
     "popper.js": "^1.16.0"

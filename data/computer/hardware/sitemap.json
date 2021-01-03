@@ -1,0 +1,10 @@
+{
+  "hasIndex": true,
+  "collections": [
+    {
+      "resource": "index.json",
+      "key": "hardware",
+      "type": "array<string>"
+    }
+  ]
+}

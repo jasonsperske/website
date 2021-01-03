@@ -1,11 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const fs = require('fs');
-const { promisify } = require('util');
-const stat = promisify(fs.stat);
-const readdir = promisify(fs.readdir);
-const readFile = promisify(fs.readFile);
+const fs = require('fs-extra');
 const port = process.env.port || 3000;
 
 app.set('view engine', 'ejs');
@@ -58,15 +54,15 @@ function getDataPath(base, req) {
 async function loadJSONdata(file, extraData) {
   let data = {};
   try {
-    data = JSON.parse(await readFile(path.join('data', file, 'index.json'), 'utf-8'));
+    data = JSON.parse(await fs.readFile(path.join('data', file, 'index.json'), 'utf-8'));
   } catch (e) {}
   return Object.assign(data, extraData);
 }
 
 async function init(app, base, layout) {
   const files = await
-    Promise.all((await readdir(path.join('views', base))).map(async (name) => {
-      const stats = await stat(path.join('views', base, name));
+    Promise.all((await fs.readdir(path.join('views', base))).map(async (name) => {
+      const stats = await fs.stat(path.join('views', base, name));
       const parsedName = path.parse(name);
       return {
         name: parsedName.name,
@@ -110,6 +106,6 @@ async function init(app, base, layout) {
 
 init(app, '').then(() => {
   app.listen(port, () => {
-    console.log(`Server started at http://0.0.0.0:${port}`);
+    console.log(`Server started at http://127.0.0.1:${port}`);
   });
 });

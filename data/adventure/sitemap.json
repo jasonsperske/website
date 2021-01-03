@@ -1,0 +1,11 @@
+{
+  "hasIndex": true,
+  "collections": [
+    {
+      "resource": "index.json",
+      "key": "fonts",
+      "type": "array<map>",
+      "mapKey": "id"
+    }
+  ]
+}

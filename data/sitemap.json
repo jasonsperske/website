@@ -1,0 +1,10 @@
+{
+  "hasIndex": true,
+  "collections": [
+    "adventure",
+    "computer",
+    "grp",
+    "project",
+    "wad"
+  ]
+}
