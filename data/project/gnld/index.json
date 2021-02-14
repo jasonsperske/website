@@ -1,4 +1,7 @@
 {
+  "project-src": {
+    "component": ["{'VIEW': '/view/project/_id/index.ejs'}"]
+  },
   "name": "GNLD (later rebranded as NeoLife)",
   "about": "<p>For GNLD I designed and implemented 3 major projects, GNLD.com (a front facing consumer website), GNLD.net (a distributor facing/back office website with ecommerce) and a content management system.  The GNLD.com and GNLD.net sites were built to support all of our markets and the CMS was built to manage teams in each country extend and maintain 27 translations.  I personally led the translation efforts for 8 markets and handed over control of the code and CMS to teams in 4 countries.  To date the systems are managed and being expanded globally.</p>",
   "stack": "<p>GNLD.com and GNLD.net are <code class>ASP.net</code> web applciation written in <code>ASPx</code> and <code>C#</code>.  There is a heavy empasis on <code>JavaScript</code> (and <code>AJAX</code> patterns) for data views (which can be seen in the screen casts). The Content Management system is a <code>Java Web Application</code> (written for Tomcat 7) and uses the <code>Twitter Bootstrap</code> CSS framework.</p>",

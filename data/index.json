@@ -1,4 +1,7 @@
 {
+  "project-src": {
+    "component": ["{'VIEW': '/view/index.ejs'}"]
+  },
   "bio": {
     "links": [{
       "href": "https://stackoverflow.com/users/16959/jason-sperske",

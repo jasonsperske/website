@@ -1,4 +1,7 @@
 {
+  "project-src": {
+    "component": ["{'VIEW': '/view/adventure/_id/index.ejs'}"]
+  },
   "id": "nightshade",
   "name": "Nightshade"
 }

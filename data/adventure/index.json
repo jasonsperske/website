@@ -1,4 +1,7 @@
 {
+  "project-src": {
+    "component": ["{'VIEW': '/view/adventure/index.ejs'}"]
+  },
   "fonts": [
     {
       "id": "kq3",

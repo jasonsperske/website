@@ -1,4 +1,7 @@
 {
+  "project-src": {
+    "component": ["{'VIEW': '/view/project/_id/index.ejs'}"]
+  },
   "name": "MixBox.mobi",
   "about": "<p>MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 (think the <a href=\"https://www.youtube.com/watch?v=b_KM2g63B9A\">Nokia 7110</a> from 1999) and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing.</p>",
   "stack": "<p>MixBox.mobi was a <code>Java web application</code> (built on the same code base as the Blue Jay Education projects).  Using <code>Tomcat</code> as the app container, and <code>MySQL</code> for the back end (it used a custom ORM called libBlueJay, this was developed before Hibernate was a viable solution). The interface was 100% valid <code>XHTML-MP</code> and <code>WML 1.0</code> (with cleaver use of WML Cards).  On this project I was the architect, developer, system administrator, XHTML-MP and WML designer and content author, as well as the manager of artists and label relationships.</p>",
