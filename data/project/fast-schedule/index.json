@@ -1,6 +1,6 @@
 {
   "project-src": {
-    "component": ["{'VIEW': '/view/project/_id/index.ejs'}"]
+    "component": ["{'VIEW': '/views/project/_id/index.ejs'}"]
   },
   "name": "FastSchedule.net",
   "about": "<p>FastSchedule.net is a powerful web application that acts like a search engine for student schedules.  A student is free to add classes directly from your existing catalog (through our simple interface) and enter multiple personal restrictions (like no classes between 11:15 AM and 4:00 PM on Monday or Wednesday) and at each point FastSchedule.net will respond in real time with all available schedules found.</p><p>FastSchedule.net can take into account, full or canceled classes, awkward gaps between courses and even multiple campuses (by not suggesting a schedule that has two or more courses that would be impossible to commute between).  It even attempts to find the best possible schedules by distributing hard classes as evenly as possible across the week so that no one day is too difficult.</p><p>Each decision made by the student causes the possible schedules to adjust instantly.  It even warns the student when no possible combination can be found and offers specific advice on what to do.  The application logs all access and usage and can provide detailed reports on not just what classes students looked for, but how many options were available at the time.  Imagine seeing all the efforts of every potential student who tried to balance their life and school and was turned away.</p>",

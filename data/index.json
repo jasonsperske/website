@@ -1,6 +1,6 @@
 {
   "project-src": {
-    "component": ["{'VIEW': '/view/index.ejs'}"]
+    "component": ["{'VIEW': '/views/index.ejs'}"]
   },
   "bio": {
     "links": [{

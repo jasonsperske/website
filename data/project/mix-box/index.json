@@ -1,6 +1,6 @@
 {
   "project-src": {
-    "component": ["{'VIEW': '/view/project/_id/index.ejs'}"]
+    "component": ["{'VIEW': '/views/project/_id/index.ejs'}"]
   },
   "name": "MixBox.mobi",
   "about": "<p>MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 (think the <a href=\"https://www.youtube.com/watch?v=b_KM2g63B9A\">Nokia 7110</a> from 1999) and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing.</p>",

@@ -1,6 +1,6 @@
 {
   "project-src": {
-    "component": ["{'VIEW': '/view/project/_id/index.ejs'}"]
+    "component": ["{'VIEW': '/views/project/_id/index.ejs'}"]
   },
   "name": "Radio Mixtape",
   "about": "<p>Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A “Radio Mixtape” is a mixtape made up songs played on the radio).  This was also a laboratory to experiment with more cutting edge code that my education software company had a need for.  As Radio Mixtape grew to became a music promotion company representing a handful of local artists and a great way to go to introduce my self to artists that I respected.</p><p>I set out to build Radio Mixtape with the hope of meeting all members of Counting Crows.  It led me to Australia, invited to hip exclusive concerts in Hollywood.  Radio Mixtape stretched my JavaScript abilities, and gave me real experience running a system that scaled out to tens of thousands of users.</p>",
