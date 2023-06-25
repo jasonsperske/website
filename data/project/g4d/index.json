@@ -1,0 +1,26 @@
+{
+  "project-src": {
+    "component": ["{'VIEW': '/views/project/_id/index.ejs'}"]
+  },
+  "name": "Grammarly for Developers",
+  "about": "<p>I joined a small team of 5 to help create a shippable Web Component, a devloper hub to manage thier applicaitons and various support functions like a blog, build infrastructure, AMPScript emails all to bring Grammalry for Developers to market.</p><p>I worked on every level of the applicaiton including parts of it's backend written in Java and Scala. As we approached our \"Go Live\" date I created an Easter Egg (in the style of Microsoft's Windows 95 secret) to commemorate the acheivement of the incredable people who helped get our product ready.</p>",
+  "stack": "<p>developer.grammarly.com was built entirely in <code>Vue 3.2</code>, the WebComponent was built in <code>React</code> and the app server was built in <code>Java</code>.  There is a heavy empasis on <code>JavaScript</code> (and <code>AJAX</code> patterns) for data views (which can be seen in the screen casts). The Content Management system is a <code>Java Web Application</code> (written for Tomcat 7) and uses the <code>Twitter Bootstrap</code> CSS framework.</p>",
+  "videos": [
+    {
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/gnld/shopping/movie.mp4",
+      "label": "Watch a screen cast introducing the shopping feature"
+    },
+    {
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/gnld/organization/movie.mp4",
+      "label": "Watch a screen cast introducing the organization view"
+    },
+    {
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/gnld/history/movie.mp4",
+      "label": "Watch a screen cast introducing the history view"
+    },
+    {
+      "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/gnld/cms/products/movie.mp4",
+      "label": "Watch a screen cast introducing the CMS"
+    }
+  ]
+}

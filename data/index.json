@@ -3,33 +3,36 @@
     "component": ["{'VIEW': '/views/index.ejs'}"]
   },
   "bio": {
-    "links": [{
-      "href": "https://stackoverflow.com/users/16959/jason-sperske",
-      "label": "Stack Overflow",
-      "fa-icon": "stack-overflow"
-    }, {
-      "href": "https://github.com/jasonsperske",
-      "label": "GitHub",
-      "fa-icon": "github"
-    }, {
-      "href": "https://gist.github.com/jasonsperske",
-      "label": "Gist",
-      "fa-icon": "github-square"
-    }, {
-      "href": "https://www.kickstarter.com/profile/sperske",
-      "label": "Kickstarter",
-      "fa-icon": "credit-card"
-    }, {
-      "href": "https://www.linkedin.com/in/jasonsperske",
-      "label": "LinkedIn",
-      "fa-icon": "linkedin"
-    }, {
-      "href": "http://careers.stackoverflow.com/sperske",
-      "label": "Résumé",
-      "fa-icon": "paperclip"
-    }]
+    "links": [
+      {
+        "href": "https://stackoverflow.com/users/16959/jason-sperske",
+        "label": "Stack Overflow",
+        "fa-icon": "stack-overflow"
+      },
+      {
+        "href": "https://github.com/jasonsperske",
+        "label": "GitHub",
+        "fa-icon": "github"
+      },
+      {
+        "href": "https://gist.github.com/jasonsperske",
+        "label": "Gist",
+        "fa-icon": "github-square"
+      },
+      {
+        "href": "https://www.kickstarter.com/profile/sperske",
+        "label": "Kickstarter",
+        "fa-icon": "credit-card"
+      },
+      {
+        "href": "https://www.linkedin.com/in/jasonsperske",
+        "label": "LinkedIn",
+        "fa-icon": "linkedin"
+      }
+    ]
   },
-  "projectsStarted": [{
+  "projectsStarted": [
+    {
       "id": "fan-st",
       "image": "/static/images/company/fan-st/logo.png",
       "name": "Fan Street Team",
@@ -75,21 +78,32 @@
       "description": "MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing."
     }
   ],
-  "projectsProfessional": [{
+  "projectsProfessional": [
+    {
       "id": "gnld",
       "name": "GNLD (later rebranded as NeoLife)",
       "duration": "2010-2013",
       "description": "GNLD International LLC is an organization with over 500 employees and offices in 7 countries. I was the Director of Informaiton Systems at their world headquarters in Fremont, CA and designed and implemented thier gloabl GNLD.com (consumer facing website) and GNLD.net (distributor facing/back office website)"
-  }],
-  "projectsPersonal": [{
+    },
+    {
+      "id": "g4d",
+      "name": "Grammarly for Developers",
+      "duration": "2021-2023",
+      "description": "The full power of Grammarly served as a Web Compoennt that devloers can customize and embed in their own applications."
+    }
+  ],
+  "projectsPersonal": [
+    {
       "href": "https://sndtst.com/",
       "name": "SND TST",
       "description": "A Sound Test for as many games as I can find"
-    }, {
+    },
+    {
       "href": "/computer/",
       "name": "Collected and Restored Old Computers",
       "description": "My growing collecitons of PCs from the late 80's to the mid 2000's."
-    }, {
+    },
+    {
       "href": "/wad/",
       "name": "WADParser.py",
       "description": "A Python script that parses DOOM WAD files and renders them as SVG."

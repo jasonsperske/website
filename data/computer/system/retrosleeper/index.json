@@ -1,6 +1,6 @@
 {
   "machineName": "retrosleeper",
-  "justification": "A Pentium 166 MMX inside of a 486 case, this computer represents the fastest system that I still ran MS-DOS on.  By the time I had a P166 I had already switched over to Windows 95 however that generation of computer is better covered by the win98 computer.",
+  "justification": "A 486 DX2-66 inside of a 486SX case.  By the time I had a P166 I had already switched over to Windows 95 however that generation of computer is better covered by the win98 computer.",
   "bios": {
     "hdd": {
       "c": {
