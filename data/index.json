@@ -68,14 +68,14 @@
       "name": "Radio Mixtape",
       "yearsActive": "2007",
       "description": "Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A \"Radio Mixtape\" is a mixtape made up songs played on the radio).",
-      "status": "Superceded by Fan Street Team."
+      "status": "Superseded by Fan Street Team."
     },
     {
       "id": "mix-box",
       "image": "/static/images/company/radiomixtape/logo.jpg",
       "name": "MixBox.mobi",
       "yearsActive": "2007",
-      "description": "MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a duel WML 1.0 and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing."
+      "description": "MixBox.mobi took the sharing aspect of Radio Mixtape and made it available on mobile phones using a dual WML 1.0 and XHTML-MP (phones from 2002 to today), interface and email and SMS sharing."
     }
   ],
   "projectsProfessional": [
@@ -83,13 +83,13 @@
       "id": "gnld",
       "name": "GNLD (later rebranded as NeoLife)",
       "duration": "2010-2013",
-      "description": "GNLD International LLC is an organization with over 500 employees and offices in 7 countries. I was the Director of Informaiton Systems at their world headquarters in Fremont, CA and designed and implemented thier gloabl GNLD.com (consumer facing website) and GNLD.net (distributor facing/back office website)"
+      "description": "GNLD International LLC is an organization with over 500 employees and offices in 7 countries. I was the Director of Information Systems at their world headquarters in Fremont, CA and designed and implemented their global GNLD.com (consumer facing website) and GNLD.net (distributor facing/back office website)"
     },
     {
       "id": "g4d",
       "name": "Grammarly for Developers",
       "duration": "2021-2023",
-      "description": "The full power of Grammarly served as a Web Compoennt that devloers can customize and embed in their own applications."
+      "description": "The full power of Grammarly served as a Web Component that developers can customize and embed in their own applications."
     }
   ],
   "projectsPersonal": [
@@ -101,7 +101,7 @@
     {
       "href": "/computer/",
       "name": "Collected and Restored Old Computers",
-      "description": "My growing collecitons of PCs from the late 80's to the mid 2000's."
+      "description": "My growing collections of PCs from the late 80's to the mid 2000's."
     },
     {
       "href": "/wad/",

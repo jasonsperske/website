@@ -3,7 +3,7 @@
     "component": ["{'VIEW': '/views/project/_id/index.ejs'}"]
   },
   "name": "Fan Street Team",
-  "stack": "<p>Fan Street Team is built on <code>Tomcat 7</code> as a <code>Java Web App</code>, and combined with some <code>Python</code> scripts for indexing and media encoding.  The frontend is written with <code>Twitter Bootstrap</code> and <code>JavaScript</code> (for <code>HTML5 Audio</code> and <code>GeoLocaiton</code>).</p>",
+  "stack": "<p>Fan Street Team is built on <code>Tomcat 7</code> as a <code>Java Web App</code>, and combined with some <code>Python</code> scripts for indexing and media encoding.  The frontend is written with <code>Twitter Bootstrap</code> and <code>JavaScript</code> (for <code>HTML5 Audio</code> and <code>GeoLocation</code>).</p>",
   "videos": [
     {
       "href": "https://s3.us-west-2.amazonaws.com/jason.sperske.com/media/screencasts/fan-st/movie.mp4",
