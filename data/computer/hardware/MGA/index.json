@@ -1,0 +1,5 @@
+{
+  "name" : "MGA",
+  "type": "video",
+  "installed": ["retrosleeper", "win98"]
+}

@@ -64,32 +64,20 @@
       ]
     }
   },
-  "hardware": {
-    "video": [
-      {
-        "id": "MGA",
-        "name": "MGA",
-        "model": "",
-        "jumpers": {}
-      }
-    ],
-    "mouse": {
+  "hardware": ["MGA", "SB", "COM1Mouse"],
+  "hardwareInfo": {
+    "MGA": {
+      "type": "video",
+      "name": "MGA"
+    },
+    "SB": {
+      "type": "sound"
+    },
+    "COM1Mouse": {
+      "type": "mouse",
       "port": "COM1",
-      "brand": "",
+      "name": "2 Button Serial Mouse",
       "buttons": 2
-    },
-    "sound": {
-      "id": "SB",
-      "name": "",
-      "model": ""
-    },
-    "io": [
-      {
-        "id": ""
-      },
-      {
-        "id": ""
-      }
-    ]
+    }
   }
 }

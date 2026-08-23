@@ -1,0 +1,28 @@
+<h1>Hardware</h1>
+<table class='table'>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Installed in</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% const info = locals.hardwareInfo || {}; %>
+  <% (locals.hardware || []).forEach((part) => { %>
+    <% const detail = info[part] || {}; %>
+    <% const installed = [].concat(detail.installed || []); %>
+    <tr>
+      <td><a href='<%=part%>/' class='btn btn-info'>view</a></td>
+      <td><span class="badge badge-primary"><%= detail.type %></span></td>
+      <td><a href='<%=part%>/'><%= detail.name || part %></a></td>
+      <td>
+      <% installed.forEach((system) => { %>
+        <a href='/computer/system/<%=system%>/'><code><%=system%></code></a>
+      <% }) %>
+      </td>
+    </tr>
+  <% }) %>
+  </tbody>
+</table>

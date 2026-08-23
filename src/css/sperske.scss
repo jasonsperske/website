@@ -1,7 +1,9 @@
+// Resolved through the `node_modules` sass load path (see build.js).
 $fa-font-path: "/static/fonts" !default;
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/font-awesome/scss/font-awesome.scss";
-@import "../../node_modules/lity/dist/lity.css";
+
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome/scss/font-awesome";
+@import "lity/dist/lity";
 
 .card {
   margin-bottom: 30px;

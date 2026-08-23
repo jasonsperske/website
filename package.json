@@ -1,39 +1,34 @@
 {
   "name": "static_site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A site dedicated to my computers",
   "main": "local.js",
+  "type": "module",
   "author": "Jason Sperske",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=18.18"
+  },
   "scripts": {
-    "build": "node ./node_modules/gulp-cli/bin/gulp.js",
-    "buildWatch": "node ./node_modules/gulp-cli/bin/gulp.js watch",
+    "assets": "node build.js",
+    "assets:watch": "node build.js --watch",
     "compile": "node compile.js",
-    "start": "node ."
+    "build": "npm run assets && npm run compile",
+    "start": "npm run assets && node local.js",
+    "dev": "node local.js --watch"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0",
+    "bootstrap": "^4.6.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
     "font-awesome": "^4.7.0",
-    "fs-extra": "^9.0.1",
-    "got": "^11.8.1",
-    "jquery": "^3.5.1",
+    "jquery": "^3.7.1",
     "lity": "^2.4.1",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "gulp": "*",
-    "gulp-babel": "^8.0.0-beta.2",
-    "gulp-clean-css": "*",
-    "gulp-concat": "*",
-    "gulp-flatten": "*",
-    "gulp-rename": "*",
-    "gulp-sass": "*",
-    "gulp-terser": "*"
+    "esbuild": "^0.25.0",
+    "sass": "^1.83.0"
   }
 }

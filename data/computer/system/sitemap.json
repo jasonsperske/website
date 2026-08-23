@@ -1,8 +1,7 @@
 {
-  "hasIndex": true,
   "collections": [
     {
-      "resource": "index.json",
+      "resource": "../index.json",
       "key": "systems",
       "type": "array<string>"
     }

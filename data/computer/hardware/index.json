@@ -1,9 +1,39 @@
 {
-  "hardware": ["TVGA8900CL"],
+  "hardware": ["i386DX33", "TVGA8900CL", "SBCT1350B", "TopDataMouse", "MGA", "SB", "COM1Mouse"],
   "hardwareInfo": {
+    "i386DX33": {
+      "type": "cpu",
+      "name": "Intel 80386DX 33MHz",
+      "installed": "dineane"
+    },
     "TVGA8900CL": {
       "type": "video",
+      "name": "Trident SVGA",
       "installed": "dineane"
+    },
+    "SBCT1350B": {
+      "type": "sound",
+      "name": "Sound Blaster 8-Bit 2.0 rev. B",
+      "installed": "dineane"
+    },
+    "TopDataMouse": {
+      "type": "mouse",
+      "name": "Top Data 3 Button Serial Mouse",
+      "installed": "dineane"
+    },
+    "MGA": {
+      "type": "video",
+      "name": "MGA",
+      "installed": ["retrosleeper", "win98"]
+    },
+    "SB": {
+      "type": "sound",
+      "installed": ["retrosleeper", "win98"]
+    },
+    "COM1Mouse": {
+      "type": "mouse",
+      "name": "2 Button Serial Mouse",
+      "installed": ["retrosleeper", "win98"]
     }
   }
 }
