@@ -117,6 +117,26 @@
       "href": "/adventure/",
       "name": "adventure.js",
       "description": "An implementation of the King's Quest engine in JavaScript using the <code>&lt;canvas&gt;</code> element."
+    },
+    {
+      "href": "https://jasonsperske.github.io/object_studio/",
+      "name": "Object Studio",
+      "description": "Builds 3D models out of functions, in the spirit of web components. There are plenty of uses for that, but the primary one was parameterized objects I could drive with Claude Code inside VR, in a project called Vair. <a href=\"https://github.com/jasonsperske/object_studio\">Source on GitHub</a>."
+    },
+    {
+      "href": "https://github.com/jasonsperske/vair",
+      "name": "Vair",
+      "description": "A VR space where you can summon Claude Code by voice to construct a world."
+    },
+    {
+      "href": "https://github.com/jasonsperske/chrs-cms",
+      "name": "CHRS-CMS",
+      "description": "A simple library manager that uses OpenAI's Image API to build a catalog of the <a href=\"https://californiahistoricalradio.com/\">California Historical Radio Society</a>'s library, which I have been helping to catalog as a volunteer since 2024."
+    },
+    {
+      "href": "https://github.com/jasonsperske/dom-hint",
+      "name": "DOM-Hint",
+      "description": "A Chrome extension that helps Claude Code debug short-lived DOM mutations, like a popup disappearing prematurely or an underline in the shadow DOM not lining up with content in the DOM."
     }
   ]
 }
