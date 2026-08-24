@@ -2,8 +2,8 @@
   "project-src": {
     "component": ["{'VIEW': '/views/project/_id/index.ejs'}"]
   },
-  "name": "Grammarly for Developers",
-  "about": "<p>I joined a small team of 5 to help create a shippable Web Component, a developer hub to manage their applications and various support functions like a blog, build infrastructure, AMPScript emails all to bring Grammarly for Developers to market.</p><p>I worked on every level of the application including parts of its backend written in Java and Scala. As we approached our \"Go Live\" date I created an Easter Egg (in the style of Microsoft's Windows 95 secret) to commemorate the achievement of the incredible people who helped get our product ready.</p>",
+  "name": "Superhuman (née Grammarly)",
+  "about": "<p>I joined a small team of 5 to help create Grammarly for Developers, a Web Component, a developer hub to manage their applications and various support functions like a blog, build infrastructure, AMPScript emails all to bring Grammarly for Developers to market.</p><p>I worked on every level of the application including parts of its backend written in Java and Scala. As we approached our \"Go Live\" date I created an Easter Egg (in the style of Microsoft's Windows 95 secret) to commemorate the achievement of the incredible people who helped get our product ready.</p>",
   "stack": "<p>developer.grammarly.com was built entirely in <code>Vue 3.2</code>, the WebComponent was built in <code>React</code> and the app server was built in <code>Java</code>.  There is a heavy emphasis on <code>JavaScript</code> (and <code>AJAX</code> patterns) for data views (which can be seen in the screen casts).</p>",
   "videos": [
   ]

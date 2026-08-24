@@ -37,8 +37,7 @@
       "image": "/static/images/company/fan-st/logo.png",
       "name": "Fan Street Team",
       "yearsActive": "2013",
-      "description": "Fan Street Team (fan.st) brought the core idea of RadioMixtape back with a pure HTML5 Audio player, streamlined music encoding, and the ability to hide music tracks in physical spaces with the use of the JavaScript GeoLocation API",
-      "status": "Now operated as <a href=\"http://fanverve.com/\">FanVerve.com</a>"
+      "description": "Fan Street Team (fan.st) brought the core idea of RadioMixtape back with a pure HTML5 Audio player, streamlined music encoding, and the ability to hide music tracks in physical spaces with the use of the JavaScript GeoLocation API"
     },
     {
       "id": "xrae",
@@ -67,8 +66,7 @@
       "image": "/static/images/company/radiomixtape/logo.jpg",
       "name": "Radio Mixtape",
       "yearsActive": "2007",
-      "description": "Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A \"Radio Mixtape\" is a mixtape made up songs played on the radio).",
-      "status": "Superseded by Fan Street Team."
+      "description": "Radio Mixtape was a social music sharing service that enabled fans to express their musical identity with the songs that bands would host on their websites (A \"Radio Mixtape\" is a mixtape made up of songs played on the radio)."
     },
     {
       "id": "mix-box",
@@ -87,9 +85,9 @@
     },
     {
       "id": "g4d",
-      "name": "Grammarly for Developers",
-      "duration": "2021-2023",
-      "description": "The full power of Grammarly served as a Web Component that developers can customize and embed in their own applications."
+      "name": "Superhuman (née Grammarly)",
+      "duration": "2021-present",
+      "description": "I have shipped code in every product you can download from Grammarly and now I work on our Student Agents platform helping unlock students' super powers!"
     }
   ],
   "projectsPersonal": [
