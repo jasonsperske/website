@@ -28,6 +28,12 @@
         "href": "https://www.linkedin.com/in/jasonsperske",
         "label": "LinkedIn",
         "fa-icon": "linkedin"
+      },
+      {
+        "href": "/static/jason-sperske-resume.pdf",
+        "label": "Resume",
+        "fa-icon": "file-pdf-o",
+        "download": "jason-sperske-resume.pdf"
       }
     ]
   },
