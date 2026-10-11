@@ -72,7 +72,7 @@
   <div class='col'>
     <h4>Places you can find me</h4>
   <% bio.links.forEach(link => { %>
-    <a class="btn btn-block btn-info" href="<%=link.href%>"><i class="fa fa-<%=link['fa-icon']%>"></i> <%=link.label%></a>
+    <a class="btn btn-block btn-info" href="<%=link.href%>"<% if (link.download) { %> download="<%=link.download%>"<% } %>><i class="fa fa-<%=link['fa-icon']%>"></i> <%=link.label%></a>
   <% }) %>
   </div>
 </div>
